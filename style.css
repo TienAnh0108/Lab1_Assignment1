@@ -165,7 +165,7 @@ li a{
     font-size: 1.2rem;
   }
 }
-
+/*Phần ABOUT*/
 .about-main {
   max-width: 900px;
   margin: 60px auto;
@@ -228,6 +228,147 @@ figcaption {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+/*Phần PROJECTS*/
+.projects-main {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.projects-main h1 {
+  color: crimson;
+  font-size: 2rem;
+}
+
+.project-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #444;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  color: crimson;
+}
+
+.project-card p {
+  color: #333;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.project-card .btn {
+  background: crimson;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.project-card .btn:hover {
+  background: #b30033;
+}
+
+/*Phần ABOUT*/
+/* CONTACT PAGE STYLES */
+.contact-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container h1 {
+  text-align: center;
+  color: crimson;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: crimson;
+  box-shadow: 0 0 4px rgba(220, 20, 60, 0.3);
+}
+
+.contact-form button {
+  width: 100%;
+  background: crimson;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: rgb(190, 20, 50);
 }
 
 .footer {
