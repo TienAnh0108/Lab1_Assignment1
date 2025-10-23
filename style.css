@@ -300,7 +300,6 @@ figcaption {
 }
 
 /*Phần ABOUT*/
-/* CONTACT PAGE STYLES */
 .contact-main {
   flex: 1;
   display: flex;
@@ -369,6 +368,186 @@ figcaption {
 
 .contact-form button:hover {
   background: rgb(190, 20, 50);
+}
+
+/* Phần SURVEY */
+
+.survey-main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(120deg, #fff8f8, #ffe5ec);
+  padding: 40px 20px;
+}
+
+.survey-container {
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.survey-container h1 {
+  color: crimson;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.survey-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+}
+
+fieldset {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 25px;
+}
+
+legend {
+  color: crimson;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+input[type="color"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: crimson;
+  outline: none;
+  box-shadow: 0 0 6px rgba(220, 20, 60, 0.3);
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: crimson;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: crimson;
+  margin-top: 5px;
+}
+
+output {
+  font-weight: 600;
+  color: crimson;
+  margin-left: 10px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+input[type="submit"] {
+  background: crimson;
+  color: white;
+}
+
+input[type="submit"]:hover {
+  background: #b3122f;
+}
+
+input[type="reset"] {
+  background: #888;
+  color: white;
+}
+
+input[type="reset"]:hover {
+  background: #666;
+}
+
+.progress-area {
+  margin-top: 25px;
+}
+
+progress,
+meter {
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+progress::-webkit-progress-value {
+  background: crimson;
+}
+
+progress::-webkit-progress-bar {
+  background: #eee;
+}
+
+meter::-webkit-meter-optimum-value {
+  background: crimson;
+}
+
+meter::-webkit-meter-bar {
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  .survey-container {
+    padding: 25px;
+  }
 }
 
 .footer {
